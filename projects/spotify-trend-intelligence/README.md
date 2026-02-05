@@ -60,6 +60,33 @@ Average audio feature values were compared across popularity groups using group-
   - slightly higher tempo and speechiness
 - While these all features were increasing i noticed that the "acousticness" consistently decreases as popularity rises**
 
+## UPDATES 
+- As the analysis progressed, the focus shifted from track-level exploration to identifying patterns      associated with mainstream success. Popularity-based segmentation and comparative audio feature analysis   were used to establish a baseline sound profile for high-performing tracks.
+
+- DATE - 05-02-2026  :
+Today I had move my focus from validating surface-level metric to validating **how sound characteristics relate to popularity and artist momentum**.
+
+## 1. Understanding Popularity as a Business Signal :
+- Popularity was the primary business metric representing listener's engagement.
+- Tracks with zero popularity were removed as it was considered as **noise** or dead weight.
+
+## 2. Moving from Emerging Tracks to Emerging Artists
+To reduce noise from one-off tracks, analysis was extended to the artist level:
+- Emerging tracks were aggregated by artist.
+- Artists with multiple emerging tracks were treated as showing **consistent momentum** rather than isolated success.
+- This shifted the analysis from “which songs might blow up” to **“which artists are building a mainstream-ready sound”**.
+
+## 3. Validating Emerging Artists Against Popularity
+To ensure identified artists were still truly emerging:
+- The **average popularity of emerging tracks per artist** was calculated.
+- This helped distinguish:
+  - artists with strong momentum but low-to-mid popularity (true emerging)
+  - artists already close to mainstream status
+
+This validation step increased confidence in the emerging artist signal.
+
+
+
 ### Interpretation :
 - Using this data I have noticed that the mainstream music increasingly favors **highly produced, electronic, and energetic sound profiles**, while more acoustic tracks are less likely to achieve high popularity.
 
@@ -81,7 +108,7 @@ Understanding how audio characteristics correlate with popularity can help:
 ---
 
 ## Future Work : I'm contiuniously working on this project 
-- Genre-wise trend analysis
+- Artist-wise trend analysis
 - Identifying “emerging” tracks with medium popularity but high-energy profiles
 - Visualization of feature trends
 - Time-based popularity analysis
